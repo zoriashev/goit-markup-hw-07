@@ -3,7 +3,6 @@
 }
 .features__heading {
   line-height: 16px;
-  font-size: 14px;
   text-transform: uppercase;
   text-align: left;
   margin-bottom: 10px;
@@ -20,11 +19,9 @@
   text-align: left;
 }
 .features__icon {
+  @include displayflex;
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

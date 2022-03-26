@@ -203,7 +203,6 @@ button {
 
 .features__heading {
   line-height: 16px;
-  font-size: 14px;
   text-transform: uppercase;
   text-align: left;
   margin-bottom: 10px;
@@ -224,10 +223,6 @@ button {
 }
 
 .features__icon {
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,6 +232,10 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
 }
 
 .header {
@@ -351,17 +350,15 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
-  font-size: 14px;
   line-height: calc(16 / 14);
   background-color: rgba(47, 48, 58, 0.8);
   letter-spacing: 0.03em;
@@ -389,6 +386,8 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -396,8 +395,6 @@ button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
-  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients__link:hover, .clients__link:focus {
@@ -491,8 +488,6 @@ button {
 
 .form__label {
   margin-bottom: 4px;
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
@@ -507,40 +502,24 @@ button {
 }
 
 .form__field input::-webkit-input-placeholder {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .form__field input:-ms-input-placeholder {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .form__field input::-ms-input-placeholder {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .form__field input::placeholder {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
@@ -570,11 +549,11 @@ button {
 }
 
 .form__input:focus ~ .form__icon {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .form__checkbox:focus + .policy__checkbox--icon {
-  border: 2px solid var(--accent-color);
+  border: 2px solid #2196f3;
 }
 
 .form__icon {
@@ -585,7 +564,7 @@ button {
           transform: translate(25%);
   height: 18px;
   width: 18px;
-  fill: var(--main-color);
+  fill: #212121;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -604,6 +583,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -617,10 +599,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: #757575;
@@ -649,7 +627,7 @@ button {
 
 .policy__checkbox:checked + .policy__checkbox--icon {
   background-image: url(../images/checkbox.svg);
-  fill: var(--white-color);
+  fill: #ffffff;
   background-color: #2196f3;
   background-position: center;
   background-repeat: no-repeat;
@@ -670,9 +648,6 @@ button {
   border-radius: 4px;
   background-color: transparent;
   color: #ffffff;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.01em;
@@ -723,7 +698,6 @@ button {
 }
 
 .portfolio__text {
-  font-weight: normal;
   font-size: 16px;
   line-height: calc(30 / 16);
   color: #757575;
@@ -742,8 +716,6 @@ button {
   padding: 63px 24px;
   height: 294px;
   width: 370px;
-  font-family: "Roboto";
-  font-weight: 400;
   font-size: 18px;
   line-height: calc(28 / 18);
   letter-spacing: 0.03em;
@@ -766,6 +738,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -782,7 +757,6 @@ button {
   color: #212121;
   border-radius: 4px;
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
@@ -842,9 +816,6 @@ button {
 }
 
 .close-button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -854,6 +825,9 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -877,15 +851,15 @@ button {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.close-button:hover .close-button__icon,
+.close-button:focus .close-button__icon {
+  fill: #2196f3;
+}
+
 .close-button:focus,
 .close-button:hover {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.22);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.22);
-}
-
-.close-button:hover .close-button__icon,
-.close-button:focus .close-button__icon {
-  fill: #2196f3;
 }
 
 .backdrop.is-hidden {
@@ -894,7 +868,6 @@ button {
 }
 
 .modal__heading {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 20px;
   line-height: calc(23 / 20);
@@ -927,9 +900,6 @@ button {
 }
 
 .footer__link {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);

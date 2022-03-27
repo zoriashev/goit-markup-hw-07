@@ -1,5 +1,5 @@
 .footer {
-  background: #2f303a;
+  background: $footer-bg;
   padding: 60px 0;
 }
 .footer--container {
@@ -13,15 +13,16 @@
   margin-right: 93px;
 }
 .footer__link {
+  font-style: normal;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: $footer-link;
   margin-top: 20px;
   @include transition(color);
 }
 .footer__link:hover,
 .footer__link:focus {
-  color: #2196f3;
+  color: $accent-color;
 }
 .footer__item:not(:last-child) {
   margin-bottom: 9px;
@@ -34,9 +35,7 @@
 }
 .footer__heading {
   font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
-  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;

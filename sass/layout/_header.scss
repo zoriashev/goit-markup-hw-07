@@ -1,12 +1,13 @@
 .header {
   background-color: $white-color;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $header-border-color;
 }
 .header__container {
   display: flex;
   justify-content: space-between;
   height: 80px;
 }
+
 .nav,
 .header-contacts,
 .nav__list {
@@ -22,12 +23,12 @@
 .header-contacts__icon {
   margin-right: 10px;
   display: flex;
-  fill: currentColor;
+  fill: $secondary-color;
 }
 .header-contacts__link,
 .nav__link {
   display: block;
-  color: var(--primary-color);
+  color: $primary-color;
   font-weight: 500;
   padding-top: 32px;
   padding-bottom: 32px;

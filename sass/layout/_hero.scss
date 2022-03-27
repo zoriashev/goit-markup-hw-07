@@ -10,7 +10,7 @@
   margin-right: auto;
 }
 .hero {
-  background-color: #2f303a;
+  background-color: $hero-bg-color;
   max-width: 1600px;
   background-image: linear-gradient(
       to right,

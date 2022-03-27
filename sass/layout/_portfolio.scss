@@ -28,7 +28,7 @@
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
-  color: #212121;
+  color: $primary-color;
   margin-bottom: 4px;
 }
 .portfolio__text {
@@ -52,7 +52,7 @@
   line-height: calc(28 / 18);
   letter-spacing: 0.03em;
   color: $white-color;
-  transform: translateY(100%);
+  transform: translateY(101%);
   @include transition(transform);
   .portfolio__link:hover &,
   .portfolio__link:focus & {
